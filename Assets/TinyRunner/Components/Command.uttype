@@ -1,0 +1,22 @@
+﻿[{
+    "$TypeId": 3,
+    "Id": "35229e8e65ee429eb76082d2915b71bd",
+    "Name": "Command",
+    "ExportFlags": 0,
+    "Unlisted": false,
+    "Visibility": 0,
+    "TypeCode": "Enum",
+    "BaseType": { "Id": "9633c95a0a68473682f09ed6a01194b4", "Name": "Int32" },
+    "Fields": [{
+        "Id": "b4680214730b4ec5b8970f1e05e22517",
+        "Name": "Jump",
+        "FieldType": { "Id": "9633c95a0a68473682f09ed6a01194b4", "Name": "Int32" },
+        "Array": false,
+        "Visibility": 0,
+        "EditorOnly": false,
+        "Versioned": true
+    }],
+    "DefaultValue": {
+        "Type": { "Id": "35229e8e65ee429eb76082d2915b71bd", "Name": "Command" }
+    }
+}]

@@ -1,0 +1,21 @@
+﻿[{
+    "$TypeId": 3,
+    "Id": "aa24c45f53bd41df9edca04eeb73ecc2",
+    "Name": "Input",
+    "ExportFlags": 0,
+    "Unlisted": false,
+    "Visibility": 0,
+    "TypeCode": "Component",
+    "Fields": [{
+        "Id": "6a4749ef7971444b85208257d44dfefc",
+        "Name": "InputCommands",
+        "FieldType": { "Id": "ac1505cbf992471288de2a11e625332c", "Name": "InputCommand" },
+        "Array": true,
+        "Visibility": 0,
+        "EditorOnly": false,
+        "Versioned": true
+    }],
+    "DefaultValue": {
+        "Type": { "Id": "aa24c45f53bd41df9edca04eeb73ecc2", "Name": "Input" }
+    }
+}]

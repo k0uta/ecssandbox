@@ -1,0 +1,29 @@
+﻿[{
+    "$TypeId": 3,
+    "Id": "ac1505cbf992471288de2a11e625332c",
+    "Name": "InputCommand",
+    "ExportFlags": 0,
+    "Unlisted": false,
+    "Visibility": 0,
+    "TypeCode": "Struct",
+    "Fields": [{
+        "Id": "4f8b07a780024c6590f4e1b403f15382",
+        "Name": "KeyCode",
+        "FieldType": { "Id": "67b95f60da58fcea0d31f9e50232dcd6", "Name": "KeyCode" },
+        "Array": false,
+        "Visibility": 0,
+        "EditorOnly": false,
+        "Versioned": true
+    }, {
+        "Id": "ccafd4bdec3644a09f8ba7fd2550142a",
+        "Name": "Command",
+        "FieldType": { "Id": "35229e8e65ee429eb76082d2915b71bd", "Name": "Command" },
+        "Array": false,
+        "Visibility": 0,
+        "EditorOnly": false,
+        "Versioned": true
+    }],
+    "DefaultValue": {
+        "Type": { "Id": "ac1505cbf992471288de2a11e625332c", "Name": "InputCommand" }
+    }
+}]

@@ -1,0 +1,229 @@
+﻿[{
+    "$TypeId": 4,
+    "Id": "5bdb39c474b64802a91a22002bec073d",
+    "Name": "Game",
+    "ExportFlags": 0,
+    "SerializedVersion": 0,
+    "Entities": [
+        { "$TypeId": 9, "Id": "c217289394794a74a566f999db0dbd38", "Name": "Floor" },
+        { "$TypeId": 9, "Id": "addaf05686ed4e83b79743bae020c42d", "Name": "Player" },
+        { "$TypeId": 9, "Id": "e4e45fae104945e48813480438229997", "Name": "Player Sprite" },
+        { "$TypeId": 9, "Id": "aaad587f882a4e50834a3ef231538a14", "Name": "Camera" }
+    ]
+},
+{
+    "$TypeId": 5,
+    "Id": "c217289394794a74a566f999db0dbd38",
+    "Name": "Floor",
+    "Enabled": true,
+    "Static": false,
+    "Layer": 0,
+    "Components": [{
+        "Type": { "Id": "c895dbe72eb46ecb10d589d320151758", "Name": "TransformNode" }
+    }, {
+        "Type": { "Id": "70449d66178e0d9f66795c24f0fbbdfc", "Name": "TransformLocalPosition" },
+        "Properties": {
+            "position": {
+                "Type": { "Id": "f139194553e8ae4a3250c5527d6de169", "Name": "Vector3" },
+                "Properties": {
+                    "x": 0,
+                    "y": -3
+                }
+            }
+        }
+    }, {
+        "Type": { "Id": "2266a95f5d16ca1ddde710d7c047ba69", "Name": "TransformLocalRotation" }
+    }, {
+        "Type": { "Id": "f11fe490eefc969bbc3fde5eab5ccd1e", "Name": "TransformLocalScale" },
+        "Properties": {
+            "scale": {
+                "Type": { "Id": "f139194553e8ae4a3250c5527d6de169", "Name": "Vector3" },
+                "Properties": {
+                    "x": 100
+                }
+            }
+        }
+    }, {
+        "Type": { "Id": "1c504a8a7963db0d32e89b527b90e057", "Name": "Sprite2DRenderer" },
+        "Properties": {
+            "sprite": { "$TypeId": 10 }
+        }
+    }, {
+        "Type": { "Id": "dad15a16473d1a6264af416ae1e47833", "Name": "RigidBody2D" }
+    }, {
+        "Type": { "Id": "162ab289c4e402ee5358f3df0a331fa3", "Name": "BoxCollider2D" }
+    }]
+},
+{
+    "$TypeId": 5,
+    "Id": "addaf05686ed4e83b79743bae020c42d",
+    "Name": "Player",
+    "Enabled": true,
+    "Static": false,
+    "Layer": 0,
+    "Components": [{
+        "Type": { "Id": "c895dbe72eb46ecb10d589d320151758", "Name": "TransformNode" }
+    }, {
+        "Type": { "Id": "b00b066004754a1dba06e2a990003e1c", "Name": "Movement" },
+        "Properties": {
+            "Speed": 5
+        }
+    }, {
+        "Type": { "Id": "162ab289c4e402ee5358f3df0a331fa3", "Name": "BoxCollider2D" },
+        "Properties": {
+            "size": {
+                "Type": { "Id": "3abb69286ddfc2d1c617a173c1eeb35d", "Name": "Vector2" },
+                "Properties": {
+                    "y": 2
+                }
+            },
+            "pivot": {
+                "Type": { "Id": "3abb69286ddfc2d1c617a173c1eeb35d", "Name": "Vector2" },
+                "Properties": {
+                    "y": 0.5
+                }
+            }
+        }
+    }, {
+        "Type": { "Id": "dad15a16473d1a6264af416ae1e47833", "Name": "RigidBody2D" },
+        "Properties": {
+            "bodyType": {
+                "$TypeId": 8,
+                "Type": { "Id": "a4afdb83c635db286370870d059ac493", "Name": "BodyType" },
+                "Id": "5602293d3c8f73715a64943669328d32",
+                "Name": "Dynamic",
+                "Value": 2
+            },
+            "density": 1
+        }
+    }, {
+        "Type": { "Id": "70449d66178e0d9f66795c24f0fbbdfc", "Name": "TransformLocalPosition" }
+    }, {
+        "Type": { "Id": "2266a95f5d16ca1ddde710d7c047ba69", "Name": "TransformLocalRotation" }
+    }, {
+        "Type": { "Id": "f11fe490eefc969bbc3fde5eab5ccd1e", "Name": "TransformLocalScale" }
+    }, {
+        "Type": { "Id": "aa24c45f53bd41df9edca04eeb73ecc2", "Name": "Input" },
+        "Properties": {
+            "InputCommands": {
+                "Type": { "Id": "ac1505cbf992471288de2a11e625332c", "Name": "InputCommand" },
+                "Items": [{
+                    "Type": { "Id": "ac1505cbf992471288de2a11e625332c", "Name": "InputCommand" },
+                    "Properties": {
+                        "KeyCode": {
+                            "$TypeId": 8,
+                            "Type": { "Id": "67b95f60da58fcea0d31f9e50232dcd6", "Name": "KeyCode" },
+                            "Id": "69fca39b09c4acd90106a580b3a58d8c",
+                            "Name": "Space",
+                            "Value": 32
+                        }
+                    }
+                }]
+            }
+        }
+    }]
+},
+{
+    "$TypeId": 5,
+    "Id": "e4e45fae104945e48813480438229997",
+    "Name": "Player Sprite",
+    "Enabled": true,
+    "Static": false,
+    "Layer": 0,
+    "Components": [{
+        "Type": { "Id": "c895dbe72eb46ecb10d589d320151758", "Name": "TransformNode" },
+        "Properties": {
+            "parent": { "$TypeId": 9, "Id": "addaf05686ed4e83b79743bae020c42d", "Name": "Entity" }
+        }
+    }, {
+        "Type": { "Id": "70449d66178e0d9f66795c24f0fbbdfc", "Name": "TransformLocalPosition" },
+        "Properties": {
+            "position": {
+                "Type": { "Id": "f139194553e8ae4a3250c5527d6de169", "Name": "Vector3" },
+                "Properties": {
+                    "y": 1
+                }
+            }
+        }
+    }, {
+        "Type": { "Id": "2266a95f5d16ca1ddde710d7c047ba69", "Name": "TransformLocalRotation" }
+    }, {
+        "Type": { "Id": "f11fe490eefc969bbc3fde5eab5ccd1e", "Name": "TransformLocalScale" }
+    }, {
+        "Type": { "Id": "1c504a8a7963db0d32e89b527b90e057", "Name": "Sprite2DRenderer" },
+        "Properties": {
+            "sprite": { "$TypeId": 10, "Guid": "0fcd27314f1e4f6488bcf24d1131a568", "FileId": 21300000, "Type": 3 }
+        }
+    }, {
+        "Type": { "Id": "95eba163dce5bfff5420a5a8c2845523", "Name": "Sprite2DSequence" },
+        "Properties": {
+            "sprites": {
+                "Type": { "Id": "cf54a635a25248ab87f2563bb840ed5b", "Name": "SpriteEntity" },
+                "Items": [
+                    { "$TypeId": 10, "Guid": "c49004c46fe016f43ba745d04a6bb048", "FileId": 21300000, "Type": 3 },
+                    { "$TypeId": 10, "Guid": "f73f87efe212b2e4b85bbb61539bc064", "FileId": 21300000, "Type": 3 },
+                    { "$TypeId": 10, "Guid": "dcf567fbef94082479dbbb9a984a4507", "FileId": 21300000, "Type": 3 },
+                    { "$TypeId": 10, "Guid": "6e679ccde58f51046adaf2cb6b84c397", "FileId": 21300000, "Type": 3 },
+                    { "$TypeId": 10, "Guid": "1af29206ae4ab554787521ddda5036e4", "FileId": 21300000, "Type": 3 },
+                    { "$TypeId": 10, "Guid": "49f2baa9f97757649828a85b873e6ec7", "FileId": 21300000, "Type": 3 },
+                    { "$TypeId": 10, "Guid": "677e85c41f4bc8748ac8b3baff2073f8", "FileId": 21300000, "Type": 3 },
+                    { "$TypeId": 10, "Guid": "f470e3c0f046aef489d361bd52df6212", "FileId": 21300000, "Type": 3 },
+                    { "$TypeId": 10, "Guid": "f8ca9ceb6f58a01438ed6ff8db552ed7", "FileId": 21300000, "Type": 3 },
+                    { "$TypeId": 10, "Guid": "17348b1f17bf37c4b8742079dc5fd11d", "FileId": 21300000, "Type": 3 }
+                ]
+            },
+            "frameRate": 6
+        }
+    }, {
+        "Type": { "Id": "d2cfd18aa4facc33b1da7ae05205691b", "Name": "Sprite2DSequencePlayer" },
+        "Properties": {
+            "sequence": { "$TypeId": 9, "Id": "e4e45fae104945e48813480438229997", "Name": "Player" },
+            "speed": 3
+        }
+    }]
+},
+{
+    "$TypeId": 5,
+    "Id": "aaad587f882a4e50834a3ef231538a14",
+    "Name": "Camera",
+    "Enabled": true,
+    "Static": false,
+    "Layer": 0,
+    "Components": [{
+        "Type": { "Id": "c895dbe72eb46ecb10d589d320151758", "Name": "TransformNode" },
+        "Properties": {
+            "parent": { "$TypeId": 9, "Id": "addaf05686ed4e83b79743bae020c42d", "Name": "Player" }
+        }
+    }, {
+        "Type": { "Id": "12692383f3fef3bb74c209888c5b0939", "Name": "Camera2D" },
+        "Properties": {
+            "backgroundColor": {
+                "Type": { "Id": "2a90a1633d6dc16cd37cdfaca7b93cea", "Name": "Color" },
+                "Properties": {
+                    "r": 0,
+                    "g": 0,
+                    "b": 0,
+                    "a": 1
+                }
+            },
+            "clearFlags": {
+                "$TypeId": 8,
+                "Type": { "Id": "76a06ddd38e99125d930e77c6a287872", "Name": "CameraClearFlags" },
+                "Id": "9faedc246f34513076701ef66b5ad74f",
+                "Name": "SolidColor",
+                "Value": 1
+            },
+            "depth": -1
+        }
+    }, {
+        "Type": { "Id": "70449d66178e0d9f66795c24f0fbbdfc", "Name": "TransformLocalPosition" },
+        "Properties": {
+            "position": {
+                "Type": { "Id": "f139194553e8ae4a3250c5527d6de169", "Name": "Vector3" },
+                "Properties": {
+                    "y": 1
+                }
+            }
+        }
+    }]
+}]

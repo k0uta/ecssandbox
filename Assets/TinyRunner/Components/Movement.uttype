@@ -1,0 +1,21 @@
+﻿[{
+    "$TypeId": 3,
+    "Id": "b00b066004754a1dba06e2a990003e1c",
+    "Name": "Movement",
+    "ExportFlags": 0,
+    "Unlisted": false,
+    "Visibility": 0,
+    "TypeCode": "Component",
+    "Fields": [{
+        "Id": "3692a4ad72f54b31acd8ccee7c2d7664",
+        "Name": "Speed",
+        "FieldType": { "Id": "37695933217a49f68ce15db33f63cdf9", "Name": "Int64" },
+        "Array": false,
+        "Visibility": 0,
+        "EditorOnly": false,
+        "Versioned": true
+    }],
+    "DefaultValue": {
+        "Type": { "Id": "b00b066004754a1dba06e2a990003e1c", "Name": "Movement" }
+    }
+}]
