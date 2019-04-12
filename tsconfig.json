@@ -26,7 +26,10 @@
         "Library/PackageCache/com.unity.tiny@0.14.3-preview/Runtime/Modules/UTiny.EditorExtensions/**/*.ts",
         "Library/PackageCache/com.unity.tiny@0.14.3-preview/Runtime/Modules/UTiny.Physics2D/**/*.ts",
         "Library/PackageCache/com.unity.tiny@0.14.3-preview/Runtime/Modules/UTiny.HitBox2D/**/*.ts",
-        "Library/PackageCache/com.unity.tiny@0.14.3-preview/Runtime/Modules/UTiny.PlayableAd/**/*.ts"
+        "Library/PackageCache/com.unity.tiny@0.14.3-preview/Runtime/Modules/UTiny.PlayableAd/**/*.ts",
+        "Library/PackageCache/com.unity.tiny@0.14.3-preview/Runtime/Modules/UTiny.Tilemap2D/**/*.ts",
+        "Library/PackageCache/com.unity.tiny@0.14.3-preview/Runtime/Modules/UTiny.UIControls/**/*.ts",
+        "Library/PackageCache/com.unity.tiny@0.14.3-preview/Runtime/Modules/UTiny.UIControlsExtensions/**/*.ts"
     ],
     "exclude": [],
     "files": [

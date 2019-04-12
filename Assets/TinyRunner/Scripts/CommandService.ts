@@ -2,7 +2,8 @@ namespace game {
     export class CommandService {
 
         static commandToFunction = {
-            [game.Command.Jump]: CommandService.Jump
+            [game.Command.Jump]: CommandService.Jump,
+            [game.Command.Accelerate]: CommandService.Accelerate
         }
 
         static performCommand(command: game.Command, world: ut.World, entity: ut.Entity) {
@@ -16,9 +17,11 @@ namespace game {
         };
 
         static Jump(world: ut.World, entity: ut.Entity) {
-            world.usingComponentData(entity, [game.Movement], (movement) => {
-                movement.Speed += 10;
-            })
+
+        };
+
+        static Accelerate(world: ut.World, entity: ut.Entity) {
+
         };
     }
 }

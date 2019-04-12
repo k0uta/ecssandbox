@@ -17,7 +17,7 @@
         "Versioned": true
     }, {
         "Id": "401534c60d1c4130baa1b2285a00d38b",
-        "Name": "Shoot",
+        "Name": "Accelerate",
         "FieldType": { "Id": "9633c95a0a68473682f09ed6a01194b4", "Name": "Int32" },
         "Array": false,
         "Visibility": 0,
@@ -27,7 +27,7 @@
     "DefaultValue": {
         "Type": { "Id": "35229e8e65ee429eb76082d2915b71bd", "Name": "Command" },
         "Properties": {
-            "Shoot": 1
+            "Accelerate": 1
         }
     }
 }]
