@@ -103,6 +103,24 @@
                             "Value": 32
                         }
                     }
+                }, {
+                    "Type": { "Id": "ac1505cbf992471288de2a11e625332c", "Name": "InputCommand" },
+                    "Properties": {
+                        "KeyCode": {
+                            "$TypeId": 8,
+                            "Type": { "Id": "67b95f60da58fcea0d31f9e50232dcd6", "Name": "KeyCode" },
+                            "Id": "d4d65f072304996f27f7cf4e1f3c5471",
+                            "Name": "A",
+                            "Value": 97
+                        },
+                        "Command": {
+                            "$TypeId": 8,
+                            "Type": { "Id": "35229e8e65ee429eb76082d2915b71bd", "Name": "Command" },
+                            "Id": "401534c60d1c4130baa1b2285a00d38b",
+                            "Name": "Accelerate",
+                            "Value": 1
+                        }
+                    }
                 }]
             }
         }
@@ -119,15 +137,9 @@
             }
         }
     }, {
-        "Type": { "Id": "162ab289c4e402ee5358f3df0a331fa3", "Name": "BoxCollider2D" },
+        "Type": { "Id": "efb8f1bb8e61304f4854daecbaeb2747", "Name": "CircleCollider2D" },
         "Properties": {
-            "size": {
-                "Type": { "Id": "3abb69286ddfc2d1c617a173c1eeb35d", "Name": "Vector2" },
-                "Properties": {
-                    "x": 0.96,
-                    "y": 0.96
-                }
-            }
+            "radius": 0.48
         }
     }]
 },
