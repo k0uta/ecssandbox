@@ -1,0 +1,42 @@
+﻿[{
+    "$TypeId": 3,
+    "Id": "ae3c99d188fd4f90a2170e5a3e720ca1",
+    "Name": "FiniteStateMachine",
+    "ExportFlags": 0,
+    "Unlisted": false,
+    "Visibility": 0,
+    "TypeCode": "Component",
+    "Fields": [{
+        "Id": "1f199f895df440b59504d97151579bcb",
+        "Name": "NextState",
+        "FieldType": { "Id": "1bff5adddd7c41de98d3329c7c641208", "Name": "String" },
+        "Array": false,
+        "Visibility": 0,
+        "EditorOnly": false,
+        "Versioned": true
+    }, {
+        "Id": "4825c08c3c084fc790ca5efbbc573978",
+        "Name": "States",
+        "FieldType": { "Id": "47f2f5ffee254304a8d4aa769d5ed033", "Name": "FiniteState" },
+        "Array": true,
+        "Visibility": 0,
+        "EditorOnly": false,
+        "Versioned": true
+    }, {
+        "Id": "2ae3d420d77f4ed2909f7f4b2af16004",
+        "Name": "CurrentState",
+        "FieldType": { "Id": "1bff5adddd7c41de98d3329c7c641208", "Name": "String" },
+        "Array": false,
+        "Visibility": 1,
+        "EditorOnly": false,
+        "Versioned": true
+    }],
+    "DefaultValue": {
+        "Type": { "Id": "ae3c99d188fd4f90a2170e5a3e720ca1", "Name": "FiniteStateMachine" },
+        "Properties": {
+            "States": {
+                "Type": { "Id": "47f2f5ffee254304a8d4aa769d5ed033", "Name": "FiniteState" }
+            }
+        }
+    }
+}]

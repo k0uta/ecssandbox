@@ -1,0 +1,29 @@
+﻿[{
+    "$TypeId": 3,
+    "Id": "47f2f5ffee254304a8d4aa769d5ed033",
+    "Name": "FiniteState",
+    "ExportFlags": 0,
+    "Unlisted": false,
+    "Visibility": 0,
+    "TypeCode": "Struct",
+    "Fields": [{
+        "Id": "7daa3d9ed9a347dc8ed182d9147504e0",
+        "Name": "StateName",
+        "FieldType": { "Id": "1bff5adddd7c41de98d3329c7c641208", "Name": "String" },
+        "Array": false,
+        "Visibility": 0,
+        "EditorOnly": false,
+        "Versioned": true
+    }, {
+        "Id": "6f1900cac9b44dc9bb591bec3fc602d6",
+        "Name": "StateComponents",
+        "FieldType": { "Id": "5a182d9d039d4dfd8fa96132d05f9ee7", "Name": "EntityReference" },
+        "Array": false,
+        "Visibility": 0,
+        "EditorOnly": false,
+        "Versioned": true
+    }],
+    "DefaultValue": {
+        "Type": { "Id": "47f2f5ffee254304a8d4aa769d5ed033", "Name": "FiniteState" }
+    }
+}]

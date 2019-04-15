@@ -1,0 +1,37 @@
+﻿[{
+    "$TypeId": 3,
+    "Id": "1b2dde49277748f7aebfcd5bb9108930",
+    "Name": "ComponentCondition",
+    "ExportFlags": 0,
+    "Unlisted": false,
+    "Visibility": 0,
+    "TypeCode": "Struct",
+    "Fields": [{
+        "Id": "b0f116e30810411c88b352155494b09f",
+        "Name": "Component",
+        "FieldType": { "Id": "1bff5adddd7c41de98d3329c7c641208", "Name": "String" },
+        "Array": false,
+        "Visibility": 0,
+        "EditorOnly": false,
+        "Versioned": true
+    }, {
+        "Id": "2e44d5f0a57a4cfa9ff3034adcc39051",
+        "Name": "Target",
+        "FieldType": { "Id": "1bff5adddd7c41de98d3329c7c641208", "Name": "String" },
+        "Array": false,
+        "Visibility": 0,
+        "EditorOnly": false,
+        "Versioned": true
+    }, {
+        "Id": "3d1adce952644d5693884a0073a50fc7",
+        "Name": "Condition",
+        "FieldType": { "Id": "1bff5adddd7c41de98d3329c7c641208", "Name": "String" },
+        "Array": false,
+        "Visibility": 0,
+        "EditorOnly": false,
+        "Versioned": true
+    }],
+    "DefaultValue": {
+        "Type": { "Id": "1b2dde49277748f7aebfcd5bb9108930", "Name": "ComponentCondition" }
+    }
+}]

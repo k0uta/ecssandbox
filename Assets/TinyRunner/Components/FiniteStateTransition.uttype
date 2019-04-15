@@ -1,0 +1,29 @@
+﻿[{
+    "$TypeId": 3,
+    "Id": "f883010ea76e4837bfcb0c06e63b4347",
+    "Name": "FiniteStateTransition",
+    "ExportFlags": 0,
+    "Unlisted": false,
+    "Visibility": 0,
+    "TypeCode": "Component",
+    "Fields": [{
+        "Id": "025aff5ebf9f49e4b54cc24c73b88353",
+        "Name": "ComponentCondition",
+        "FieldType": { "Id": "1b2dde49277748f7aebfcd5bb9108930", "Name": "ComponentCondition" },
+        "Array": true,
+        "Visibility": 0,
+        "EditorOnly": false,
+        "Versioned": true
+    }, {
+        "Id": "7106f73c5bf4478d8f2e426dec034770",
+        "Name": "TransitionState",
+        "FieldType": { "Id": "1bff5adddd7c41de98d3329c7c641208", "Name": "String" },
+        "Array": false,
+        "Visibility": 0,
+        "EditorOnly": false,
+        "Versioned": true
+    }],
+    "DefaultValue": {
+        "Type": { "Id": "f883010ea76e4837bfcb0c06e63b4347", "Name": "FiniteStateTransition" }
+    }
+}]
