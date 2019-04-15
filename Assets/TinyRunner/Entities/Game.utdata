@@ -7,6 +7,8 @@
     "Entities": [
         { "$TypeId": 9, "Id": "504d85ac723942bf9773041f88252618", "Name": "Player" },
         { "$TypeId": 9, "Id": "b73f516bd3c04bf5bb30e809ca64174e", "Name": "Camera" },
+        { "$TypeId": 9, "Id": "338651878ba94735a0a0d672c15af8a3", "Name": "WalkState" },
+        { "$TypeId": 9, "Id": "4463f9889a1b47c18117a535a437fe5f", "Name": "JumpState" },
         { "$TypeId": 9, "Id": "0b565a8b64d645edb4ecaa79099a8771", "Name": "Tilemap" }
     ]
 },
@@ -48,18 +50,6 @@
         "Type": { "Id": "1c504a8a7963db0d32e89b527b90e057", "Name": "Sprite2DRenderer" },
         "Properties": {
             "sprite": { "$TypeId": 10, "Guid": "af9866f9783f1e24481cec533ef9d147", "FileId": 21300000, "Type": 3 }
-        }
-    }, {
-        "Type": { "Id": "95eba163dce5bfff5420a5a8c2845523", "Name": "Sprite2DSequence" },
-        "Properties": {
-            "sprites": {
-                "Type": { "Id": "cf54a635a25248ab87f2563bb840ed5b", "Name": "SpriteEntity" },
-                "Items": [
-                    { "$TypeId": 10, "Guid": "507691b5294a8ab4aac62fc2bd07491d", "FileId": 21300000, "Type": 3 },
-                    { "$TypeId": 10, "Guid": "04ca2a08d42d79c4c997778e24afedc5", "FileId": 21300000, "Type": 3 }
-                ]
-            },
-            "frameRate": 3
         }
     }, {
         "Type": { "Id": "d2cfd18aa4facc33b1da7ae05205691b", "Name": "Sprite2DSequencePlayer" },
@@ -141,6 +131,27 @@
         "Properties": {
             "radius": 0.48
         }
+    }, {
+        "Type": { "Id": "ae3c99d188fd4f90a2170e5a3e720ca1", "Name": "FiniteStateMachine" },
+        "Properties": {
+            "NextState": "Walk",
+            "States": {
+                "Type": { "Id": "47f2f5ffee254304a8d4aa769d5ed033", "Name": "FiniteState" },
+                "Items": [{
+                    "Type": { "Id": "47f2f5ffee254304a8d4aa769d5ed033", "Name": "FiniteState" },
+                    "Properties": {
+                        "StateName": "Walk",
+                        "StateComponents": { "$TypeId": 9, "Id": "338651878ba94735a0a0d672c15af8a3", "Name": "WalkingState" }
+                    }
+                }, {
+                    "Type": { "Id": "47f2f5ffee254304a8d4aa769d5ed033", "Name": "FiniteState" },
+                    "Properties": {
+                        "StateName": "Jump",
+                        "StateComponents": { "$TypeId": 9, "Id": "4463f9889a1b47c18117a535a437fe5f", "Name": "WalkState" }
+                    }
+                }]
+            }
+        }
     }]
 },
 {
@@ -199,6 +210,97 @@
                     "y": 0
                 }
             }
+        }
+    }]
+},
+{
+    "$TypeId": 5,
+    "Id": "338651878ba94735a0a0d672c15af8a3",
+    "Name": "WalkState",
+    "Enabled": false,
+    "Static": false,
+    "Layer": 0,
+    "Components": [{
+        "Type": { "Id": "f43e5c863ce6454cb54e9083bc0a0123", "Name": "ComponentList" },
+        "Properties": {
+            "Components": {
+                "Type": { "Id": "1bff5adddd7c41de98d3329c7c641208", "Name": "String" },
+                "Items": [
+                    "ut.Core2D.Sprite2DSequence"
+                ]
+            }
+        }
+    }, {
+        "Type": { "Id": "95eba163dce5bfff5420a5a8c2845523", "Name": "Sprite2DSequence" },
+        "Properties": {
+            "sprites": {
+                "Type": { "Id": "cf54a635a25248ab87f2563bb840ed5b", "Name": "SpriteEntity" },
+                "Items": [
+                    { "$TypeId": 10, "Guid": "507691b5294a8ab4aac62fc2bd07491d", "FileId": 21300000, "Type": 3 },
+                    { "$TypeId": 10, "Guid": "04ca2a08d42d79c4c997778e24afedc5", "FileId": 21300000, "Type": 3 }
+                ]
+            },
+            "frameRate": 3
+        }
+    }, {
+        "Type": { "Id": "c895dbe72eb46ecb10d589d320151758", "Name": "TransformNode" },
+        "Properties": {
+            "parent": { "$TypeId": 9, "Id": "504d85ac723942bf9773041f88252618", "Name": "Player" }
+        }
+    }]
+},
+{
+    "$TypeId": 5,
+    "Id": "4463f9889a1b47c18117a535a437fe5f",
+    "Name": "JumpState",
+    "Enabled": false,
+    "Static": false,
+    "Layer": 0,
+    "Components": [{
+        "Type": { "Id": "f43e5c863ce6454cb54e9083bc0a0123", "Name": "ComponentList" },
+        "Properties": {
+            "Components": {
+                "Type": { "Id": "1bff5adddd7c41de98d3329c7c641208", "Name": "String" },
+                "Items": [
+                    "ut.Core2D.Sprite2DSequence",
+                    "game.Jump",
+                    "game.FiniteStateTransition"
+                ]
+            }
+        }
+    }, {
+        "Type": { "Id": "95eba163dce5bfff5420a5a8c2845523", "Name": "Sprite2DSequence" },
+        "Properties": {
+            "sprites": {
+                "Type": { "Id": "cf54a635a25248ab87f2563bb840ed5b", "Name": "SpriteEntity" },
+                "Items": [
+                    { "$TypeId": 10, "Guid": "6ce6ee4b0e53af3489f880b0c249da05", "FileId": 21300000, "Type": 3 }
+                ]
+            },
+            "frameRate": 3
+        }
+    }, {
+        "Type": { "Id": "a2a9b118520740d0952d8957132fcaab", "Name": "Jump" }
+    }, {
+        "Type": { "Id": "c895dbe72eb46ecb10d589d320151758", "Name": "TransformNode" },
+        "Properties": {
+            "parent": { "$TypeId": 9, "Id": "504d85ac723942bf9773041f88252618", "Name": "Player" }
+        }
+    }, {
+        "Type": { "Id": "f883010ea76e4837bfcb0c06e63b4347", "Name": "FiniteStateTransition" },
+        "Properties": {
+            "ComponentCondition": {
+                "Type": { "Id": "1b2dde49277748f7aebfcd5bb9108930", "Name": "ComponentCondition" },
+                "Items": [{
+                    "Type": { "Id": "1b2dde49277748f7aebfcd5bb9108930", "Name": "ComponentCondition" },
+                    "Properties": {
+                        "Component": "game.Jump",
+                        "Target": "IsJumping",
+                        "Condition": "== false"
+                    }
+                }]
+            },
+            "TransitionState": "Walk"
         }
     }]
 },

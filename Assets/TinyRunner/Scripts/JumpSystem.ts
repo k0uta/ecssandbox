@@ -14,12 +14,9 @@ namespace game {
 
                     let setVelocity = new ut.Physics2D.SetVelocity2D(velocity.velocity.add(new Vector2(0, jump.JumpSpeed)));
                     this.world.setOrAddComponentData(entity, setVelocity);
+                    jump.IsJumping = true;
                 } else {
-                    let isJumping = Math.abs(velocity.velocity.y) > speedMinValue;
-
-                    if (!isJumping && this.world.hasComponent(entity, game.Jump)) {
-                        this.world.removeComponent(entity, game.Jump);
-                    }
+                    jump.IsJumping = Math.abs(velocity.velocity.y) > speedMinValue;
                 }
             });
         }
