@@ -35,5 +35,6 @@
     "files": [
         "TinyExport/TinyRunner/html5/development/artifacts/scripts/bind-generated.d.ts",
         "Tiny/Dist/runtimedll/RuntimeFull.d.ts"
-    ]
+    ],
+    "allowJs": true
 }
